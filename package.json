@@ -11,14 +11,19 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.sayHello"
+        "onCommand:extension.ghciHelperStart",
+        "onCommand:extension.ghciHelperReload"
     ],
     "main": "./extension",
     "contributes": {
         "commands": [
             {
-                "command": "extension.sayHello",
-                "title": "Hello World"
+                "command": "extension.ghciHelperStart",
+                "title": "ghci-helper: Start GHCi using Stack"
+            },
+            {
+                "command": "extension.ghciHelperReload",
+                "title": "ghci-helper: Reload module and run main"
             }
         ]
     },
