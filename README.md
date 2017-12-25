@@ -18,8 +18,13 @@ In typical usage, I bind `ghciHelperReload` to the `F7` key so I can rapidly rel
 
 That's it!
 
+## Release notes
+
+[View change log][change-log]
+
 ## Licence
 
 Released under [MIT License][licence]
 
+[change-log]: CHANGELOG.md
 [licence]: LICENSE
