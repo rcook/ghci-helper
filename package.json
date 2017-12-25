@@ -2,8 +2,15 @@
     "name": "ghci-helper",
     "displayName": "GHCi Helper",
     "description": "Helpers for GHCi and Haskell Stack",
+    "author": "Richard Cook",
+    "license": "MIT",
     "version": "0.0.1",
     "publisher": "rcook",
+    "homepage": "https://github.com/rcook/ghci-helper",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/rcook/ghci-helper.git"
+    },
     "engines": {
         "vscode": "^1.19.0"
     },
