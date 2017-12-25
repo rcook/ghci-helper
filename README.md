@@ -1,6 +1,6 @@
-# ghci-helper README
+# ghci-helper by Richard Cook
 
-This is the README for your extension "ghci-helper". After writing up a brief description, we recommend including the following sections.
+Miscellaneous GHCi-related helpers to speed up Haskell development
 
 ## Features
 
