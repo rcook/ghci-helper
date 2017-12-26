@@ -1,5 +1,9 @@
 # Change log
 
+## v0.0.4
+
+* Reduce VSCode version bound to 1.18.0
+
 ## v0.0.3
 
 * No longer set focus to terminal when running `:reload` or `:main`
