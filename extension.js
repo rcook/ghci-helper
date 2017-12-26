@@ -12,9 +12,7 @@ function activate(context) {
             vscode.window.showInformationMessage("No terminal set: start GHCi with \"ghciHelperStart\" command");
         }
         else {
-            terminal.show();
             terminal.sendText(command);
-            vscode.window.showInformationMessage(command + " sent to terminal");
         }
     }
 
