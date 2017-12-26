@@ -7,7 +7,8 @@ Miscellaneous GHCi-related helpers to speed up Haskell development
 This extension adds the following two commands:
 
 * `ghciHelperStart`: Creates a terminal and runs `stack ghci` in it
-* `ghciHelperReload`: Sends `:reload` and `:main` commands to the terminal opened with the `ghciHelperStart` command
+* `ghciHelperReload`: Sends `:reload` command to the terminal opened with the `ghciHelperStart` command
+* `ghciHelperMain`: Sends `:main` command to the terminal opened with the `ghciHelperStart` command
 
 This enables a very specific rapid development cycle:
 
