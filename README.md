@@ -15,24 +15,24 @@ This enables a very specific rapid development cycle:
 * Edit file in Visual Studio Code
 * Incrementally reload and execute in integrated terminal
 
-In typical usage, I bind `ghciHelper.reload` and `ghciHelper.main` to the `F8` and `F8` keys respectively so I can rapidly reload and run my `main` function. Here are my typical GHCi-related keyboard bindings:
+In typical usage, I bind `ghciHelper.reload` and `ghciHelper.main` to use a prefix key of `Alt+G` followed by the `8` and `9` keys respectively so I can rapidly reload and run my `main` function. Here are my typical GHCi-related keyboard bindings:
 
 ```json
 [
     {
-        "key": "f6",
+        "key": "alt+g 6",
         "command": "workbench.action.terminal.focus"
     },
     {
-        "key": "f7",
+        "key": "alt+g 7",
         "command": "ghciHelper.start"
     },
     {
-        "key": "f8",
+        "key": "alt+g 8",
         "command": "ghciHelper.reload"
     },
     {
-        "key": "f9",
+        "key": "alt+g 9",
         "command": "ghciHelper.main"
     }
 ]
