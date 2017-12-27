@@ -43,6 +43,20 @@
                 "command": "ghciHelper.main",
                 "title": "Send :main to GHCi terminal"
             }
+        ],
+        "keybindings": [
+            {
+                "key": "alt+g 7",
+                "command": "ghciHelper.start"
+            },
+            {
+                "key": "alt+g 8",
+                "command": "ghciHelper.reload"
+            },
+            {
+                "key": "alt+g 9",
+                "command": "ghciHelper.main"
+            }
         ]
     },
     "scripts": {
