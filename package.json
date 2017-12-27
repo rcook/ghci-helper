@@ -2,6 +2,7 @@
     "name": "ghci-helper",
     "displayName": "GHCi Helper",
     "description": "Helpers for GHCi and Haskell Stack",
+    "icon": "images/haskell.png",
     "author": "Richard Cook",
     "license": "MIT",
     "version": "0.0.6",
