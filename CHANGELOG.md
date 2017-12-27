@@ -1,5 +1,10 @@
 # Change log
 
+## v0.0.6
+
+* Add Haskell logo
+* Add key bindings for all three commands
+
 ## v0.0.5
 
 * Fix names of commands so they're under `ghciHelper` instead of `extension`
