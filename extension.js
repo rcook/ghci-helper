@@ -20,7 +20,7 @@ function activate(context) {
     // This line of code will only be executed once when your extension is activated
     console.log('Congratulations, your extension "ghci-helper" is now active!');
 
-    let startCommand = vscode.commands.registerCommand("ghciHelper.start", function() {
+    context.subscriptions.push(vscode.commands.registerCommand("ghciHelper.start", function() {
         if (terminal == null) {
             terminal = vscode.window.createTerminal("GHCi");
             terminal.show();
@@ -29,21 +29,15 @@ function activate(context) {
         else {
             vscode.window.showInformationMessage("GHCi terminal has already been started");
         }
-    });
+    }));
 
-    context.subscriptions.push(startCommand);
-
-    let reloadCommand = vscode.commands.registerCommand("ghciHelper.reload", function () {
+    context.subscriptions.push(vscode.commands.registerCommand("ghciHelper.reload", function () {
         sendToGhci(":reload");
-    });
+    }));
 
-    context.subscriptions.push(reloadCommand);
-
-    let mainCommand = vscode.commands.registerCommand("ghciHelper.main", function () {
+    context.subscriptions.push(vscode.commands.registerCommand("ghciHelper.main", function () {
         sendToGhci(":main");
-    });
-
-    context.subscriptions.push(mainCommand);
+    }));
 }
 exports.activate = activate;
 

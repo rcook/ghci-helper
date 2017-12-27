@@ -3,6 +3,7 @@
 ## v0.0.5
 
 * Fix names of commands so they're under `ghciHelper` instead of `extension`
+* Some internal refactoring
 
 ## v0.0.4
 
