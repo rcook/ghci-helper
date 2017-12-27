@@ -7,9 +7,9 @@ const vscode = require('vscode');
 function activate(context) {
     var terminal = null;
 
-    function sendCommand(command) {
+    function sendToGhci(command) {
         if (terminal == null) {
-            vscode.window.showInformationMessage("No terminal set: start GHCi with \"ghciHelperStart\" command");
+            vscode.window.showInformationMessage("No terminal set: start GHCi with \"ghciHelper.start\" command");
         }
         else {
             terminal.sendText(command);
@@ -20,30 +20,30 @@ function activate(context) {
     // This line of code will only be executed once when your extension is activated
     console.log('Congratulations, your extension "ghci-helper" is now active!');
 
-    let ghciHelperStart = vscode.commands.registerCommand("extension.ghciHelperStart", function() {
+    let startCommand = vscode.commands.registerCommand("ghciHelper.start", function() {
         if (terminal == null) {
             terminal = vscode.window.createTerminal("GHCi");
             terminal.show();
             terminal.sendText("stack ghci");
         }
         else {
-            vscode.window.showInformationMessage("GHCi terminal is already started");
+            vscode.window.showInformationMessage("GHCi terminal has already been started");
         }
     });
 
-    context.subscriptions.push(ghciHelperStart);
+    context.subscriptions.push(startCommand);
 
-    let ghciHelperReload = vscode.commands.registerCommand("extension.ghciHelperReload", function () {
-        sendCommand(":reload");
+    let reloadCommand = vscode.commands.registerCommand("ghciHelper.reload", function () {
+        sendToGhci(":reload");
     });
 
-    context.subscriptions.push(ghciHelperReload);
+    context.subscriptions.push(reloadCommand);
 
-    let ghciHelperMain = vscode.commands.registerCommand("extension.ghciHelperMain", function () {
-        sendCommand(":main");
+    let mainCommand = vscode.commands.registerCommand("ghciHelper.main", function () {
+        sendToGhci(":main");
     });
 
-    context.subscriptions.push(ghciHelperMain);
+    context.subscriptions.push(mainCommand);
 }
 exports.activate = activate;
 

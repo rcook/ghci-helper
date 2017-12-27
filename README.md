@@ -6,16 +6,16 @@ Miscellaneous GHCi-related helpers to speed up Haskell development
 
 This extension adds the following two commands:
 
-* `ghciHelperStart`: Creates a terminal and runs `stack ghci` in it
-* `ghciHelperReload`: Sends `:reload` command to the terminal opened with the `ghciHelperStart` command
-* `ghciHelperMain`: Sends `:main` command to the terminal opened with the `ghciHelperStart` command
+* `ghciHelper.start`: Creates a terminal and runs `stack ghci` in it
+* `ghciHelper.reload`: Sends `:reload` command to the terminal opened with the `ghciHelper.start` command
+* `ghciHelper.main`: Sends `:main` command to the terminal opened with the `ghciHelperStart` command
 
 This enables a very specific rapid development cycle:
 
 * Edit file in Visual Studio Code
 * Incrementally reload and execute in integrated terminal
 
-In typical usage, I bind `ghciHelperReload` and `ghciHelperMain` to the `F8` and `F8` keys respectively so I can rapidly reload and run my `main` function. Here are my typical GHCi-related keyboard bindings:
+In typical usage, I bind `ghciHelper.reload` and `ghciHelper.main` to the `F8` and `F8` keys respectively so I can rapidly reload and run my `main` function. Here are my typical GHCi-related keyboard bindings:
 
 ```json
 [
@@ -25,15 +25,15 @@ In typical usage, I bind `ghciHelperReload` and `ghciHelperMain` to the `F8` and
     },
     {
         "key": "f7",
-        "command": "extension.ghciHelperStart"
+        "command": "ghciHelper.start"
     },
     {
         "key": "f8",
-        "command": "extension.ghciHelperReload"
+        "command": "ghciHelper.reload"
     },
     {
         "key": "f9",
-        "command": "extension.ghciHelperMain"
+        "command": "ghciHelper.main"
     }
 ]
 ```

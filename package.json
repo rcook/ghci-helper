@@ -23,24 +23,24 @@
         "stack"
     ],
     "activationEvents": [
-        "onCommand:extension.ghciHelperStart",
-        "onCommand:extension.ghciHelperReload",
-        "onCommand:extension.ghciHelperMain"
+        "onCommand:ghciHelper.start",
+        "onCommand:ghciHelper.reload",
+        "onCommand:ghciHelper.main"
     ],
     "main": "./extension",
     "contributes": {
         "commands": [
             {
-                "command": "extension.ghciHelperStart",
-                "title": "ghci-helper: (ghciHelperStart) Start GHCi using Stack"
+                "command": "ghciHelper.start",
+                "title": "Start GHCi using Stack"
             },
             {
-                "command": "extension.ghciHelperReload",
-                "title": "ghci-helper: (ghciHelperReload) send :reload to terminal"
+                "command": "ghciHelper.reload",
+                "title": "Send :reload to GHCi terminal"
             },
             {
-                "command": "extension.ghciHelperMain",
-                "title": "ghci-helper: (ghciHelperMain) send :main to terminal"
+                "command": "ghciHelper.main",
+                "title": "Send :main to GHCi terminal"
             }
         ]
     },

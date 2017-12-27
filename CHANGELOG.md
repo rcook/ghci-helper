@@ -1,5 +1,9 @@
 # Change log
 
+## v0.0.5
+
+* Fix names of commands so they're under `ghciHelper` instead of `extension`
+
 ## v0.0.4
 
 * Reduce VSCode version bound to 1.18.0
