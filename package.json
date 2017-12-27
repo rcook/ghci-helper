@@ -4,7 +4,7 @@
     "description": "Helpers for GHCi and Haskell Stack",
     "author": "Richard Cook",
     "license": "MIT",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "publisher": "rcook",
     "homepage": "https://github.com/rcook/ghci-helper",
     "repository": {
