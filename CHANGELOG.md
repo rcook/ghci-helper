@@ -4,6 +4,7 @@
 
 * Fix names of commands so they're under `ghciHelper` instead of `extension`
 * Some internal refactoring
+* Introduce `ghciHelper.stackPath` configuration setting
 
 ## v0.0.4
 

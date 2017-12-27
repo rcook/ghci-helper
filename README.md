@@ -38,6 +38,8 @@ In typical usage, I bind `ghciHelper.reload` and `ghciHelper.main` to the `F8` a
 ]
 ```
 
+The path to the Stack executable can optionally be configured via the `ghciHelper.stackPath` configuration setting.
+
 That's it!
 
 ## Release notes

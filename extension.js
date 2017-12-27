@@ -1,7 +1,16 @@
 const vscode = require("vscode");
 
+function def(value, defaultValue) {
+    return value === null || value === undefined
+        ? defaultValue
+        : value;
+}
+
 function activate(context) {
-    var terminal = null;
+    const config = vscode.workspace.getConfiguration("ghciHelper");
+    const stackPath = def(config.get("stackPath"), "stack");
+
+    let terminal = null;
 
     function sendToGhci(command) {
         if (terminal == null) {
@@ -14,9 +23,10 @@ function activate(context) {
 
     context.subscriptions.push(vscode.commands.registerCommand("ghciHelper.start", function() {
         if (terminal == null) {
+            const stackGhciCommand = `${stackPath} ghci`;
             terminal = vscode.window.createTerminal("GHCi");
             terminal.show();
-            terminal.sendText("stack ghci");
+            terminal.sendText(stackGhciCommand);
         }
         else {
             vscode.window.showInformationMessage("GHCi terminal has already been started");
