@@ -1,5 +1,9 @@
 # Change log
 
+## v0.0.7
+
+* Change default prefix key to Alt+Q instead of Alt+G
+
 ## v0.0.6
 
 * Add Haskell logo

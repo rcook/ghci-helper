@@ -46,15 +46,15 @@
         ],
         "keybindings": [
             {
-                "key": "alt+g 7",
+                "key": "alt+q 7",
                 "command": "ghciHelper.start"
             },
             {
-                "key": "alt+g 8",
+                "key": "alt+q 8",
                 "command": "ghciHelper.reload"
             },
             {
-                "key": "alt+g 9",
+                "key": "alt+q 9",
                 "command": "ghciHelper.main"
             }
         ]

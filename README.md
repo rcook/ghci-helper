@@ -6,9 +6,9 @@ Miscellaneous GHCi-related helpers to speed up Haskell development
 
 This extension adds the following three commands and associated key bindings:
 
-* `ghciHelper.start` (`Alt+G 7`): Creates a terminal and runs `stack ghci` in it
-* `ghciHelper.reload` (`Alt+G 8`): Sends `:reload` command to the terminal opened with the `ghciHelper.start` command
-* `ghciHelper.main` (`Alt+G 9`): Sends `:main` command to the terminal opened with the `ghciHelperStart` command
+* `ghciHelper.start` (`Alt+Q 7`): Creates a terminal and runs `stack ghci` in it
+* `ghciHelper.reload` (`Alt+Q 8`): Sends `:reload` command to the terminal opened with the `ghciHelper.start` command
+* `ghciHelper.main` (`Alt+Q 9`): Sends `:main` command to the terminal opened with the `ghciHelperStart` command
 
 This enables a very specific rapid development cycle:
 
