@@ -1,5 +1,9 @@
 # Change log
 
+## v0.0.8
+
+* Always `cd` into workspace root directory if available before running `stack ghci`
+
 ## v0.0.7
 
 * Change default prefix key to Alt+Q instead of Alt+G

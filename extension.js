@@ -23,9 +23,16 @@ function activate(context) {
 
     context.subscriptions.push(vscode.commands.registerCommand("ghciHelper.start", function() {
         if (terminal == null) {
-            const stackGhciCommand = `${stackPath} ghci`;
             terminal = vscode.window.createTerminal("GHCi");
             terminal.show();
+
+            const workspaceDir = vscode.workspace.rootPath;
+            if (typeof workspaceDir != "undefined") {
+                const cdCommand = `cd "${workspaceDir}"`;
+                terminal.sendText(cdCommand);
+            }
+
+            const stackGhciCommand = `${stackPath} ghci`;
             terminal.sendText(stackGhciCommand);
         }
         else {
