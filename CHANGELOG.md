@@ -1,5 +1,9 @@
 # Change log
 
+## v0.0.9
+
+* Add rudimentary support for languages other than Haskell
+
 ## v0.0.8
 
 * Always `cd` into workspace root directory if available before running `stack ghci`
