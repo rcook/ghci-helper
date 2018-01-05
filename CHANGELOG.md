@@ -3,6 +3,7 @@
 ## v0.0.9
 
 * Add rudimentary support for languages other than Haskell
+* Change default prefix key to Alt+Z instead of Alt+Q
 
 ## v0.0.8
 
