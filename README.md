@@ -19,6 +19,11 @@ The path to the Stack executable can optionally be configured via the `ghciHelpe
 
 That's it!
 
+## Dev environment
+
+* Install [nvm][nvm]
+* Refresh packages with `npm install`
+
 ## Release notes
 
 [View change log][change-log]
@@ -29,3 +34,4 @@ Released under [MIT License][licence]
 
 [change-log]: CHANGELOG.md
 [licence]: LICENSE
+[nvm]: https://github.com/creationix/nvm
